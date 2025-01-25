@@ -2,16 +2,29 @@ import hamburger from './assets/menu-add-line (1).png';
 import logo from './assets/reformation-logo.svg';
 import search from './assets/search-line.svg';
 import shoppingBag from './assets/shopping-bag-line.svg';
-import heart from './assets/heart-2-line.png'
+import heart from './assets/heart-2-line.png';
+
+import downArrow from './assets/arrow-down-s-line.png'
+
 
 function Nav(){
   return(
     <nav className='nav-header'>
+      
 
       <div className='hamburger-layout'>
 
         <div className='hamburger_logo'>
           <img src={hamburger} alt="" className='hamburger'/>
+        </div>
+
+        <div className='left_area'>
+          <div className='arrow'>
+            <img src={downArrow} alt="" />
+            <p>Canada</p>
+          </div>
+          <p>Our Store</p>
+          <p>Sustainability</p>
         </div>
 
         <img src={logo} alt="" className='logo'/>
@@ -26,10 +39,9 @@ function Nav(){
             <img src={heart} alt="" />
             <p>Favorites</p>
           </div>
-          
           <a href="#">Sign In</a>
           <div className='bag'>
-            <img src={shoppingBag} alt="" className='bag'/>
+            <img src={shoppingBag} alt="" />
             <p>Bag</p>
           </div>
           
@@ -76,10 +88,10 @@ function Nav(){
             <a href="#" className='dropdown-btn'>Edits</a>
           </li>
         </ul>
-        <div className='nav-bag'>
-          <img src={search} alt="" className='search'/>
+        <div className='nav_search'>
+          <img src={search} alt="" />
           <p>Search</p>
-      </div>
+        </div>
       </div>
     </nav>
   )

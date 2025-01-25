@@ -1,4 +1,5 @@
 import Nav from './Nav'
+import Hero from './Hero'
 
 function App() {
   
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
      <Nav />
+     <Hero />
     </>
   )
 }
