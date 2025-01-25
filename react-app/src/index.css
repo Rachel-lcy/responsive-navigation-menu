@@ -1,0 +1,168 @@
+/* 为主容器设置整体布局 */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.nav-header{
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+
+.hamburger-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+}
+
+/* 左侧菜单和Logo */
+.hamburger_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hamburger {
+  height: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* 搜索和购物袋部分 */
+.search_bag {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.bag {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+
+.heart-area{
+  display: flex;
+}
+
+/* 响应式设计 */
+@media (width >50px) {
+  .hamburger-layout {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 105px;
+    height: 13.36px;
+  }
+
+  .search, .bag {
+    height: 24px;
+    width: 24px;
+  }
+}
+.nav-div{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1.5rem;
+}
+
+.nav-div ul{
+  list-style: none;
+}
+
+.dropdown-btn{
+  font-size: 20px;
+  padding: 10px;
+}
+.nav-bag{
+  display: flex;
+  justify-content: space-around;
+}
+.nav-bag p{
+  font-size: 20px;
+}
+
+.heart_area{
+  display: flex;
+  align-items:center;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+}
+
+.heart{
+  display: flex;
+  
+}
+
+.bag{
+  display: flex;
+  
+}
+
+@media (max-width:1024px){
+  .nav-div{
+    display: none;
+  }
+  .logo{
+    width: 105px;
+    height: 30px;
+  }
+  .hamburger_logo .hamburger {
+    display: block;
+  }
+  .heart_area{
+    display: none;
+  }
+  
+  .search_bag{
+    display: flex;
+  }
+}
+
+@media (min-width :1025px) {
+  .hamburger_logo .hamburger {
+    display: none;
+  }
+  .nav-div {
+    display: flex;
+}
+.logo{
+  width: 180px;
+  height: 22.91px;
+}
+.heart_area{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  margin-right: 20px;
+  vertical-align: text-bottom;
+}
+
+.search_bag{
+  display: none;
+}
+}
