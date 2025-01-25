@@ -1,20 +1,20 @@
+// import React, { useState } from 'react';
+
 import hamburger from './assets/menu-add-line (1).png';
 import logo from './assets/reformation-logo.svg';
 import search from './assets/search-line.svg';
 import shoppingBag from './assets/shopping-bag-line.svg';
 import heart from './assets/heart-2-line.png';
-
 import downArrow from './assets/arrow-down-s-line.png'
 
 
 function Nav(){
+
   return(
     <nav className='nav-header'>
-      
-
       <div className='hamburger-layout'>
 
-        <div className='hamburger_logo'>
+        <div className='hamburger_logo' >
           <img src={hamburger} alt="" className='hamburger'/>
         </div>
 
@@ -44,16 +44,15 @@ function Nav(){
             <img src={shoppingBag} alt="" />
             <p>Bag</p>
           </div>
-          
-          
+
         </div>
       </div>
 
       <div className='nav-div'>
         <ul className='nav-lists'>
-          <li className='lists-dropdown'>
+          <li>
             <a href="#" className='dropdown-btn'>New</a>
-              {/* <div className='dropdown-content'>
+              <div className='dropdown-content'>
                 <div>
                   <a href="">All New</a>
                   <a href="">New This Week</a>
@@ -75,7 +74,7 @@ function Nav(){
                   <a href="">Party Time</a>
                   <a href="">Romance Yourself</a>
                 </div>
-              </div> */}
+              </div>
             <a href="#" className='dropdown-btn'>Clothing</a>
             <a href="#" className='dropdown-btn'>Dresses</a>
             <a href="#" className='dropdown-btn'>Tops</a>
